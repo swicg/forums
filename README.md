@@ -2,7 +2,7 @@
 
 > (W3C [Social Web Community Group](https://www.w3.org/community/swicg/)) ActivityPub based Forums and Threaded Discussions Task Force repository
 
-This is the repository for the Forums and Threaded Discussions Task Force of the W3C 
+This is the repository for the Forums and Threaded Discussions Task Force of the W3C
 [Social Web Community Group](https://www.w3.org/community/swicg/). It is used:
 
 * As an issue tracker for Forum-related general feature requests.
@@ -10,11 +10,13 @@ This is the repository for the Forums and Threaded Discussions Task Force of the
 
 ## Other Discussion Forums
 
-In addition to this repository, conversation also occurs at:
+In addition to this repository, conversation also occurs:
 
-* W3C `public-swicg` [SocialWeb CG mailing list](https://lists.w3.org/Archives/Public/public-swicg/) (for general discussion)
-* [Fediverse Enhancement Protocols](https://codeberg.org/fediverse/fep) repository (for related specification under
-  incubation)
+* On the fediverse, with a historical archive at the following locations
+    * https://community.nodebb.org/category/31/forums-and-threaded-discussions-task-force
+    * https://socialhub.activitypub.rocks/c/activitypub/threadiverse-wg/88
+
+*Both locations are [FEP 1b12 actors](//w3id.org/fep/1b12) and can be followed by your ActivityPub-enabled application of choice*
 
 ## Contributing to the Repository
 
