@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Conversational Contexts in ActivityPub</title>
+  <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+  <script class="remove">
+    // All config options at https://respec.org/docs/
+    var respecConfig = {
+      specStatus: "CG-DRAFT",
+      editors: [{
+        name: "Julian Lam", url: "https://community.nodebb.org/user/julian", w3cid: "154858"
+      }],
+      github: "swicg/forums",
+      shortName: "forum-wg",
+      xref: ["activitystreams-vocabulary", "activitystreams-core", "activitypub"],
+      group: "socialcg",
+      format: "markdown"
+    };
+  </script>
+  <style>
+    table td,
+    table td * {
+      vertical-align: top;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="abstract">
+    A common concern with both users and implementors alike are deficiencies related to synchronization of conversations between different instances, as well as the inability to moderate conversations efficiently due to existing protocol expectations.
+
+    Various approaches current exist in-the-wild for grouping related pieces of content together (a "conversational context"), either informally or otherwise. Some of these approaches are documented in a Fediverse Enhancement Proposal, while others are specific to their own implementation.
+
+    This report lays out the current state of conversational contexts, lay the groundwork for a common approach for new implementors, and provide a set of recommendations for existing implementors.
+  </section>
+  <section id="sotd">
+    This document is currently in-progress.
+  </section>
+  <section>
+    ## Introduction
+
+    The concept that a conversation is...
+  </section>
+
+  <section>
+    ## State of Conversational Contexts
+
+    ### `inReplyTo` and `replies` traversal
+
+    ### `ostatus:conversation`
+  </section>
+
+  <section>
+    ## Concerns
+
+    ### Contextual backfill and synchronization
+
+    - `replies` not broadly implemented
+
+    ### Reply Limiting
+
+    ### Moderation
+  </section>
+
+  <section class="informative">
+    ## Fediverse Enhancement Proposals
+
+    _todo: short one-paragraph summaries of related FEPs_
+
+    ### FEP-1b12: Group federation
+
+    ### FEP-171b: Conversation Containers
+
+    ### FEP-400e: Publicly-appendable ActivityPub collections
+
+    ### FEP-76ea: Conversation Threads
+
+    ### FEP-7888: Demystifying the context property
+  </section>
+
+  <section>
+    ## Recommendations
+
+    ### Publicly-appendable Collections
+
+    - already an integral part of all FEPs
+
+    ### New implementors
+
+    ### Existing implementors
+  </section>
+</body>
+</html>
