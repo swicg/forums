@@ -35,13 +35,58 @@
 
     This report lays out the current state of conversational contexts, lay the groundwork for a common approach for new implementors, and provide a set of recommendations for existing implementors.
   </section>
+
   <section id="sotd">
     This document is currently in-progress.
   </section>
+
   <section>
     ## Introduction
 
-    The concept that a conversation is...
+    That a single object is part of a greater whole is not a new concept in communication methodologies. When individuals are speaking face-to-face, there is an ad hoc conversational context that allows for a mutual understanding of the topic at hand.
+
+    The most prominent digital example of an ad hoc conversational context is email. There is no explicit declaration of context in any one email message, but a context can be constructed by grouping emails together by subject.
+
+    Conversely, explicit conversational contexts became a useful structure to organize disparate pieces of content at the digital level. For example, chat messages are grouped in "rooms", forum posts are groups into "threads" or "topics", and so on. This structure persisted through many of the social media sites that rose to prominence, although the rise of microblogging (i.e. X, née Twitter) signified a marked departure from explicit contexts back to an ad hoc context. While many of the deficiencies of an ad hoc context can be countered by centralization, this is not an option for a decentralized network like ActivityPub.
+
+    This report provides an abridged history of conversational context resolution with respect to ActivityPub and its predecessors, outlines the current state, and lays out several recommendations for both new and existing implementations in order to coalesce toward a common definition for conversational context resolution.
+  </section>
+
+  <section>
+    ## Nomenclature
+
+    The _Forum and Threaded Discussions Task Force_, from which this report is derived, utilises a common set of vocabulary to represent identical concepts across a broad spectrum of implementations. These terms are as follows.
+
+    * **object**: represents a single discrete unit of content.
+        * a _post_, _status_, or _message_.
+    * **context**: represents a grouping of objects under a common scope.
+        * a _topic_, _thread_, or _conversation_.
+    * **audience**: represents a grouping of contexts under a common scope.
+        * a _category_, _community_, or _(sub)forum_.
+
+    Generally, each successive term denotes a higher-level grouping of lower-level items. It is worth noting that not all implementations organize content using all three levels.
+
+    Additional vocaulary items used in this report include:
+
+    * **ad hoc context**:
+
+    * **conversational context**:
+  </section>
+
+  <section>
+    ## Legacy Implementations
+
+    ### `as:source`
+
+    * (https://activitystrea.ms/specs/json/schema/activity-schema.html#source)
+
+    ### `as:scope`
+
+    - [[activitystreams-vocabulary]]
+
+    ### `ostatus:conversation`
+
+    - mastodon
   </section>
 
   <section>
@@ -49,11 +94,11 @@
 
     ### `inReplyTo` and `replies` traversal
 
-    ### `ostatus:conversation`
+    - "bottom up"
   </section>
 
   <section>
-    ## Concerns
+    ## Goals
 
     ### Contextual backfill and synchronization
 
@@ -83,13 +128,23 @@
   <section>
     ## Recommendations
 
+    ### Explicit conversational contexts
+
     ### Publicly-appendable Collections
 
     - already an integral part of all FEPs
 
+    ### Multiple contexts
+
+    - narrow to wide
+
     ### New implementors
 
     ### Existing implementors
+
+    ### Concerns
+
+    - overloading existing use of `context`
   </section>
 </body>
 </html>
